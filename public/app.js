@@ -29,10 +29,10 @@ menu1.addEventListener('click', () => {
     const down = document.querySelector('.one');
     dropdown1.classList.contains('hidden') == true ?
         (dropdown1.classList.remove('hidden'),
-        down.src = 'http://127.0.0.1:5500/images/icon-arrow-up.svg')
+        down.src = 'images/icon-arrow-up.svg')
     :
         (dropdown1.classList.add('hidden'),
-        down.src = 'http://127.0.0.1:5500/images/icon-arrow-down.svg')
+        down.src = 'images/icon-arrow-down.svg')
     
 })
 
@@ -41,9 +41,9 @@ menu2.addEventListener('click', () => {
 
     dropdown2.classList.contains('hidden') == true ?
         (dropdown2.classList.remove('hidden'),
-        down.src = 'http://127.0.0.1:5500/images/icon-arrow-up.svg')
+        down.src = 'images/icon-arrow-up.svg')
     :
         (dropdown2.classList.add('hidden'),
-        down.src = 'http://127.0.0.1:5500/images/icon-arrow-down.svg')
+        down.src = 'images/icon-arrow-down.svg')
     
 })
