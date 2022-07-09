@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    background-color: hsl(0, 0%, 98%);
+}
+
+.context {
+    font-size: 14px;
+}
+
+.menu {
+    height: 100vh;
+    width: 70%;
+}
+
+.bg {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    /* background-color:transparent; */
+    background-color: rgba(41, 41, 41, 0.63);
+}

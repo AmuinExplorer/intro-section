@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <link rel="stylesheet" href="output.css" />
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet"> -->
+</head>
+<body class="relative h-screen">
+
+  <div class="absolute right-0 menu bg-AlmostWhite z-40 hidden collapsable-menu">
+
+    <!-- Close menu btn -->
+    <div class="flex justify-end p-5">
+      <img class="close-btn hover:cursor-pointer" src="images/icon-close-menu.svg " alt="">
+    </div>
+
+    <!-- Features / Company / Careers / About -->
+    <div class="flex flex-col">
+
+      <!-- Features -->
+      <div>
+        <!-- feature -->
+        <div class="flex items-center p-5 pb-0 menu-1 hover:cursor-pointer">
+          <p class="text-MediumGray font-['Epilogue'] text-[14px]">Features</p>
+          <div class="ml-2">
+            <img class="one" src="/images/icon-arrow-down.svg" id="down" alt="">
+          </div>
+        </div>
+        <div class="pt-5 dropdown-1 hidden">
+          <p class="text-MediumGray font-['Epilogue'] text-[14px] m-2 ml-10 mt-0">
+            <img class="inline pr-3" src="images/icon-todo.svg" alt="">
+            Todo List</p>
+          <p class="text-MediumGray font-['Epilogue'] text-[14px] m-2 ml-10 mt-0">
+            <img class="inline pr-3" src="images/icon-calendar.svg" alt="">
+            Calendar</p>
+          <p class="text-MediumGray font-['Epilogue'] text-[14px] m-2 ml-10 mt-0">
+            <img class="inline pr-3" src="images/icon-reminders.svg" alt="">
+            Reminders</p>
+          <p class="text-MediumGray font-['Epilogue'] text-[14px] m-2 ml-10 mt-0">
+            <img class="inline pr-3" src="images/icon-planning.svg" alt="">
+            Planing</p>
+        </div>
+      </div>
+
+      <!-- Company -->
+      <div>
+        <!-- company -->
+        <div class="flex items-center p-5 pb-0 menu-2 hover:cursor-pointer">
+          <p class="text-MediumGray font-['Epilogue'] text-[14px]">Company</p>
+          <div class="ml-2">
+            <img class="two" src="images/icon-arrow-down.svg" id="down" alt="">
+          </div>
+        </div>
+        <div class="pt-5 dropdown-2 hidden">
+          <p class="text-MediumGray font-['Epilogue'] text-[14px] m-2 ml-10 mt-0">
+            History</p>
+          <p class="text-MediumGray font-['Epilogue'] text-[14px] m-2 ml-10 mt-0">
+            Our Team</p>
+          <p class="text-MediumGray font-['Epilogue'] text-[14px] m-2 ml-10 mt-0">
+            Blog</p>
+        </div>
+      </div>
+      </div>
+
+      <!-- Careers -->
+      <div>
+        <!-- careers -->
+        <div class="flex items-center p-5 pb-0 hover:cursor-pointer">
+          <p class="text-MediumGray font-['Epilogue'] text-[14px]">Careers</p>
+          <div class="ml-2">
+            <img class="" src="images/icon-arrow-down.svg" alt="">
+          </div>
+        </div>
+      </div>
+
+      <!-- About -->
+      <div>
+        <!-- about -->
+        <div class="flex items-center p-5 pb-0 hover:cursor-pointer">
+          <p class="text-MediumGray font-['Epilogue'] text-[14px]">About</p>
+          <div class="ml-2">
+            <img class="" src="images/icon-arrow-down.svg" alt="">
+          </div>
+        </div>
+      </div>
+
+      <!-- Buttons -->
+      <div class="flex flex-col mt-10 p-5 justify-center items-center">
+        <!-- Login -->
+        <button class="w-full bg-slate-400 md:w-1/2 text-AlmostWhite font-['Epilogue'] text-[14px] p-5 pt-2 pb-2 mb-1 rounded-lg">Login</button>
+        <!-- Register -->
+        <button class="w-full bg-slate-400 md:w-1/2 text-AlmostWhite font-['Epilogue'] text-[14px] p-5 pt-2 pb-2 mt-1 rounded-lg">Register</button>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="bg z-30 hidden bg"></div>
+
+  <!-- Container -->
+  <div class="container flex flex-col mx-auto  md:max-w-none main ">
+
+    <!-- Navigation menu & Logo -->
+    <div class="flex justify-between items-center p-5">
+      <!-- Snap Logo -->
+      <img class="md:hidden" src="images/logo.svg" alt="snap logo">
+
+      <!-- Nav links -->
+      <div class="justify-between hidden md:flex">
+
+        <!-- Logo Snap -->
+        <img class="hidden md:block w-16 m-5" src="images/logo.svg" alt="snap logo">
+        <!-- Links -->
+        <div class="flex justify-evenly ml-10">
+          <div class="flex items-center menu-2 hover:cursor-pointer px-2">
+            <p class="text-MediumGray font-['Epilogue'] text-[14px]">Features</p>
+            <div class="ml-2">
+              <img class="two" src="images/icon-arrow-down.svg" id="down" alt="">
+            </div>
+          </div>
+  
+          <div class="flex items-center menu-2 hover:cursor-pointer px-2">
+            <p class="text-MediumGray font-['Epilogue'] text-[14px]">Company</p>
+            <div class="ml-2">
+              <img class="two" src="images/icon-arrow-down.svg" id="down" alt="">
+            </div>
+          </div>
+  
+          <div class="flex items-center menu-2 hover:cursor-pointer px-2">
+            <p class="text-MediumGray font-['Epilogue'] text-[14px]">Careers</p>
+            <div class="ml-2">
+              <img class="two" src="images/icon-arrow-down.svg" id="down" alt="">
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="hidden md:block text-[14px] mr-5">
+        <button class="pl-5 pr-5 py-2 bg-slate-400 rounded-xl text-AlmostWhite">Login</button>
+        <button class="pl-5 pr-5 py-2 bg-slate-400 rounded-xl text-AlmostWhite">Register</button>
+      </div>
+      <img class="w-8 h-5 m-btn hover:cursor-pointer md:hidden" src="images/icon-menu.svg" alt="menu icon">
+    </div>
+
+    <!-- Hero section -->
+    <div class="flex justify-center items-center">
+      <div class="flex flex-col lg:flex-row-reverse lg:mt-52">
+        <div class="mb-10 flex justify-center items-center lg:justify-start">
+          <!-- desktop -->
+          <img class="md:w-[80%]" src="images/image-hero-mobile.png" alt="">
+        </div>
+        <div class="flex flex-col justify-center items-center">
+          <div class="md:w-[60%]">
+            <h1 class="text-center text-3xl font-['Poppins'] font-extrabold mb-5 lg:hidden">Make remote work</h1>
+            <h1 class="hidden lg:block text-5xl font-['Poppins'] font-extrabold"><span>Make</span> <br> remote work</h1>
+            <p class="text-center font-['Poppins'] text-[15px] mb-5 lg:text-left lg:pt-10">Get your team sync, no matter your location. Streamline processes, create
+              team rituals, and watch productivity soar.
+            </p>
+            <div class="flex items-center justify-center mb-10">
+              <button class="bg-zinc-900 px-5 py-3 text-white rounded-lg">Learn more</button>
+            </div>
+          </div>
+          <div class="flex justify-center items-center gap-5">
+            <img class="w-[50px] lg:w-[100px]" src="images/client-databiz.svg" alt="">
+            <img class="w-[50px] lg:w-[100px]" src="images/client-audiophile.svg" alt="">
+            <img class="w-[50px] lg:w-[100px]" src="images/client-meet.svg" alt="">
+            <img class="w-[50px] lg:w-[100px]" src="images/client-maker.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
